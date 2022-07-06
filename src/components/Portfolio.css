@@ -1,0 +1,31 @@
+.worksContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.banner {
+    display: "flex";
+
+    width: "400%";
+    animation: bannermove 10s linear infinite;
+}
+
+.banner div {
+    margin: 10px;
+}
+
+.banner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

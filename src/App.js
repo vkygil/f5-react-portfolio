@@ -1,18 +1,17 @@
 import { useState } from "react"
-import NoteList from "./components/MainPage"
-
+import Portfolio from "./components/Portfolio"
 const App = () => {
 
   let [data, setData] = useState([
     {
       name: "Sukhchain Singh",
       title: "WEB DEVELOPER"
-    } 
+    }
   ])
 
   return (
-    <div>
-      <Portfolio data={data} />
+    <div> 
+        <Portfolio data={data} />
     </div>
   )
 }
